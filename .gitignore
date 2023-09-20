@@ -1,0 +1,31 @@
+# Project
+out
+
+# Nuxt
+.nuxt
+.nitro
+.cache
+.output
+.config
+.env
+
+# Node
+node_modules
+dist
+core
+
+# Yarn
+.pnp.*
+.yarn/*
+!.yarn/patches
+!.yarn/plugins
+!.yarn/releases
+!.yarn/sdks
+!.yarn/versions
+
+# VIM
+**/*~
+
+# Other
+.scraper-*
+*.log*

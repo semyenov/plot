@@ -1,0 +1,35 @@
+{
+  "$schema": "https://json.schemastore.org/tsconfig.json",
+
+  "compilerOptions": {
+    "moduleResolution": "bundler",
+    "lib": ["ESNext", "DOM"],
+
+    "declaration": false,
+    "target": "ESNext",
+    "module": "ESNext",
+
+    "strict": true,
+    "resolveJsonModule": true,
+    "resolvePackageJsonExports": true,
+    "resolvePackageJsonImports": true,
+    "allowSyntheticDefaultImports": true,
+
+    "forceConsistentCasingInFileNames": true,
+    "esModuleInterop": true,
+    "skipLibCheck": true,
+    "allowJs": true,
+    "sourceMap": true,
+    "importHelpers": true,
+    "noResolve": false,
+
+    "baseUrl": "./",
+    "rootDir": "./src",
+    "outDir": "./dist",
+
+    "paths": {
+      "~/*": ["./src/*"]
+    }
+  },
+  "include": ["./src/**/*"]
+}

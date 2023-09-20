@@ -1,0 +1,8 @@
+{
+  "image": "docker.io/library/archlinux:latest",
+  "customizations": {
+    "vscode": {
+      "extensions": ["christian-kohler.npm-intellisense"]
+    }
+  }
+}

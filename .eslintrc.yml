@@ -1,0 +1,48 @@
+root: true
+env:
+  node: true
+parser: vue-eslint-parser
+parserOptions:
+  parser: '@typescript-eslint/parser'
+plugins:
+  - vue
+  - import
+  - '@typescript-eslint'
+extends:
+  - eslint:recommended
+  - plugin:import/recommended
+  - plugin:import/typescript
+  - plugin:@typescript-eslint/recommended
+  - '@antfu'
+settings:
+  import/resolver:
+    typescript: true
+    node: true
+rules:
+  no-console: warn
+  antfu/if-newline: off
+  vue/multi-word-component-names: off
+  import/namespace: error
+  import/default: error
+  import/export: error
+  import/named: error
+  import/order:
+    - error
+    - groups:
+        - builtin
+        - external
+        - object
+        - parent
+        - internal
+        - sibling
+        - index
+        - type
+      pathGroups:
+        - pattern: '@/**'
+          group: internal
+          position: after
+        - pattern: ~/**
+          group: internal
+          position: after
+      distinctGroup: true
+      newlines-between: always
