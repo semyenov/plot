@@ -28,6 +28,7 @@
     "outDir": "./dist",
 
     "paths": {
+      "@semyenov/plot": ["./src/*"],
       "~/*": ["./src/*"]
     }
   },
